@@ -1,0 +1,409 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --orange:#ffc107;
+  --orange-2:#db9b25;
+  --dark:#222831;
+  --white:#fff;
+  --text:#0c0c0c;
+}
+
+body{
+  font-family:"Open Sans",sans-serif;
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+.hero-img img{
+  width:100%;
+  height:100vh;
+  object-fit:cover;
+}
+
+.header-section{
+  width:100%;
+  padding:0 5%;
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:absolute;
+  top:15px;
+  left:0;
+}
+
+.header-section h2{
+  font-family:"Dancing Script",cursive;
+  font-size:38px;
+  color:var(--white);
+}
+
+.navigation-bar{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+
+.navigation-bar li{
+  list-style:none;
+}
+
+.navigation-bar a{
+  text-decoration:none;
+  color:var(--white);
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+.navigation-bar a:hover{
+  color:var(--orange);
+}
+
+#home-section a{
+  color:var(--orange);
+}
+
+#icon-cantainer{
+  display:flex;
+  gap:15px;
+}
+
+#icon-cantainer i{
+  color:var(--white);
+  cursor:pointer;
+}
+
+#li-section a{
+  background:var(--orange);
+  padding:10px 25px;
+  border-radius:30px;
+  color:var(--white);
+  text-transform:capitalize;
+}
+
+#li-section a:hover{
+  background:var(--orange-2);
+}
+
+.icon-card{
+  display:none;
+  color:var(--white);
+  font-size:22px;
+}
+
+.content-cantener{
+  position:absolute;
+  top:35%;
+  left:8%;
+  max-width:600px;
+  color:var(--white);
+}
+
+.content-cantener h1{
+  font-family:"Dancing Script",cursive;
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.content-cantener p{
+  line-height:1.6;
+}
+
+.button-1{
+  margin-top:30px;
+}
+
+.button-1 button{
+  padding:14px 50px;
+  background:var(--orange);
+  border:none;
+  border-radius:30px;
+  color:var(--white);
+  font-size:18px;
+  cursor:pointer;
+}
+
+.button-1 button:hover{
+  background:var(--orange-2);
+}
+
+.cantainer{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  margin:100px auto;
+  flex-wrap:wrap;
+}
+
+.box-1{
+  display:flex;
+  gap:20px;
+  background:var(--dark);
+  padding:25px;
+  width:100%;
+  max-width:600px;
+}
+
+.img-section{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  overflow:hidden;
+  border:4px solid var(--orange);
+}
+
+.img-section img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+#content h4{
+  font-family:"Dancing Script",cursive;
+  color:var(--white);
+  font-size:28px;
+}
+
+#content p{
+  font-family:"Dancing Script",cursive;
+  color:var(--white);
+  font-size:32px;
+  margin:15px 0;
+}
+
+#button-001{
+  padding:10px 30px;
+  border:none;
+  border-radius:30px;
+  background:var(--orange);
+  color:var(--white);
+  font-size:16px;
+}
+
+.menu-cantainer{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  padding:60px 5%;
+}
+
+.menu-card{
+  background:linear-gradient(to bottom,#f1f2f3 25px,#222831 25px);
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.menu-img{
+  background:#f1f2f3;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:30px;
+}
+
+.menu-img img{
+  width:140px;
+  transition:.3s;
+}
+
+.menu-card:hover img{
+  transform:scale(1.15);
+}
+
+.menu-discription h5{
+  color:var(--white);
+  padding:20px;
+  font-size:20px;
+}
+
+.menu-discription p{
+  color:#ddd;
+  padding:0 20px 20px;
+  line-height:1.5;
+}
+
+.menu-icon{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 20px 25px;
+}
+
+.menu-icon h4{
+  color:var(--white);
+}
+
+.menu-icon a{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:var(--orange);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--white);
+}
+
+#our-h1{
+  text-align:center;
+  font-family:"Dancing Script",cursive;
+  font-size:45px;
+  margin-top:80px;
+}
+
+.our-cantainer{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  margin:40px 0;
+}
+
+.our-cantainer p{
+  cursor:pointer;
+  padding:12px 25px;
+  border-radius:25px;
+}
+
+.our-cantainer p:hover,
+#p-20{
+  background:#0c0c0c;
+  color:#fff;
+}
+
+.img-2-section{
+  background:var(--dark);
+  padding:80px 5%;
+}
+
+#box-cantainer{
+  display:flex;
+  flex-wrap:wrap;
+  gap:40px;
+  align-items:center;
+  justify-content:center;
+}
+
+.img-content-card img{
+  max-width:400px;
+  width:100%;
+}
+
+.content-2-card{
+  max-width:500px;
+  color:#fff;
+}
+
+.content-2-card h2{
+  font-family:"Dancing Script",cursive;
+  font-size:45px;
+  margin-bottom:20px;
+}
+
+#button-content-2-card a{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 45px;
+  background:var(--orange);
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+#input-img-section{
+  padding:80px 5%;
+}
+
+.input-box{
+  display:flex;
+  flex-wrap:wrap;
+  gap:40px;
+  justify-content:center;
+}
+
+.input-cantainer input{
+  width:100%;
+  max-width:550px;
+  padding:15px;
+  margin-bottom:20px;
+}
+
+.google-map-img-cantiner img{
+  width:100%;
+  max-width:550px;
+  border-radius:10px;
+}
+
+.button-input-section{
+  text-align:center;
+  margin-top:30px;
+}
+
+.button-input-section button{
+  padding:14px 50px;
+  background:var(--orange);
+  border:none;
+  border-radius:30px;
+  color:#fff;
+}
+
+.customers-sections{
+  padding:100px 5%;
+  text-align:center;
+}
+
+.custumers-box{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
+  margin-top:40px;
+}
+
+.first-custumers-cantiner{
+  background:var(--dark);
+  color:#fff;
+  padding:30px;
+  max-width:600px;
+  border-radius:8px;
+}
+
+.footer-section{
+  background:var(--dark);
+  color:#fff;
+  padding:80px 5%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+}
+
+.footer-section h3{
+  font-family:"Dancing Script",cursive;
+  font-size:38px;
+}
+
+.icon-footer-cantainer a{
+  background:#fff;
+  padding:8px;
+  border-radius:50%;
+  color:#000;
+}
+
+@media(max-width:900px){
+  .navigation-bar{display:none}
+  .icon-card{display:block}
+  .content-cantener h1{font-size:40px}
+}
+
+@media(max-width:600px){
+  .content-cantener{
+    left:5%;
+    top:30%;
+  }
+  .content-cantener h1{font-size:30px}
+}
